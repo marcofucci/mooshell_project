@@ -53,7 +53,7 @@ MIDDLEWARE_CLASSES = (
 	'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'WebDev.urls'
+ROOT_URLCONF = 'urls'
 
 INSTALLED_APPS = (
 	'django.contrib.auth',

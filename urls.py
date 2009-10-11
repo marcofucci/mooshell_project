@@ -15,6 +15,6 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # (r'^admin/', include(admin.site.urls)),
 
-    url(r'^media/(?P<path>.*)$', 'WebDev.base.views.serve_static', name='media'),
+    url(r'^media/(?P<path>.*)$', 'base.views.serve_static', name='media'),
     (r'^', include('mooshell.urls')),
 )

@@ -1,0 +1,3 @@
+A Django project used to host mooshell application
+Mooshell may be added to any Django project.
+This one is to make the process of installing Mooshell easier.

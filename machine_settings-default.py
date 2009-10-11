@@ -28,7 +28,7 @@ LANGUAGES = (
 )
 DEFAULT_LANGUAGE = 1
 
-WEBDIR = 'WebDev/media/'
+WEBDIR = 'mooshell_project/media/'
 MEDIA_ROOT = os.path.join(FRAMEWORK_PATH, WEBDIR)
 
 EMAIL_HOST = 'localhost'

@@ -16,5 +16,5 @@ urlpatterns = patterns('',
     # (r'^admin/', include(admin.site.urls)),
 
     url(r'^media/(?P<path>.*)$', 'base.views.serve_static', name='media'),
-    (r'^', include('mooshell.urls')),
+    (r'^', include('machine_urls')),
 )

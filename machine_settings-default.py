@@ -40,13 +40,3 @@ MEDIA_DIRS = (
 			  MEDIA_ROOT,
 )
 
-
-SEO_TITLE_TAIL = " | to test your JavaScript code"
-SEO_TITLE_HEAD = ""
-
-TITLE_SEPARATOR = " | "
-
-PROJECT_NAME = "MooShell"
-PROJECT_STATUS = "(local)"
-
-

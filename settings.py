@@ -4,6 +4,7 @@ import os
 
 # Get the machine specific settings:
 from machine_settings import *
+from mooshell.machine_settings import *
 
 ADMINS = (
 		# ('Your Name', 'your_email@domain.com'),
@@ -40,7 +41,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 	'django.core.context_processors.debug',
 #	'django.core.context_processors.i18n',
     "django.core.context_processors.request",
-    "base.context_processors.load_settings",
+    "mooshell.context_processors.load_settings",
 ) 
 
 AUTHENTICATION_BACKENDS = (

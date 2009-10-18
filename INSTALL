@@ -6,7 +6,10 @@ Clone the http://github.com/zalun/mooshell
 Set PYTHONPATH to direcotry containning both application and project
 Change directory to mooshell_project
 copy machine_settings-default.py to machine_settings.py
-edit it and change accordingly to your setup
+and machine_urls-default.py to machine_urls.py
+edit them and change accordingly to your setup.
 
 run included server 
 $ python ./manage.py runserver
+
+Sample Apache WSGI settings in file apache_config.wsgi

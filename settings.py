@@ -23,7 +23,7 @@ USE_I18N = True
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = os.path.join(MEDIA_ROOT,'/media/')
+MEDIA_URL = os.path.join(MEDIA_ROOT)
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
@@ -61,5 +61,7 @@ INSTALLED_APPS = (
 	'django.contrib.contenttypes',
 	'django.contrib.sessions',
 	'django.contrib.sites',
+	'django.contrib.admindocs',
+	'django.contrib.admin',
 	'mooshell',
 )

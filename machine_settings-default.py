@@ -38,5 +38,6 @@ TEMPLATE_DIRS = (
 )
 MEDIA_DIRS = (
 			  MEDIA_ROOT,
+				os.path.join(FRAMEWORK_PATH, 'mooshell_project/adminmedia/')
 )
 

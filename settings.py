@@ -23,12 +23,12 @@ USE_I18N = True
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = os.path.join(MEDIA_ROOT)
+MEDIA_URL = WEBDIR #os.path.join(MEDIA_ROOT)
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/media/admin/'
+ADMIN_MEDIA_PREFIX = '/adminmedia/'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (

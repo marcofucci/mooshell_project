@@ -12,12 +12,11 @@ FRAMEWORK_PATH = os.path.dirname(os.path.dirname(__file__)) +'/'
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-DATABASE_ENGINE = 'mysql'
-# sqlite3
-DATABASE_NAME = 'tools'     # Or path to database file if using sqlite3.
-DATABASE_USER = 'x'
-DATABASE_PASSWORD = 'x'
-DATABASE_HOST = 'localhost'
+DATABASE_ENGINE = 'sqlite3'
+DATABASE_NAME = '../database.db'     # Or path to database file if using sqlite3.
+DATABASE_USER = ''
+DATABASE_PASSWORD = ''
+DATABASE_HOST = ''
 DATABASE_PORT = ''
 
 TIME_ZONE = 'Europe/London'

@@ -6,6 +6,9 @@ import os
 from machine_settings import *
 from mooshell.machine_settings import *
 
+if DEBUG:
+    CACHE_BACKEND = 'dummy://'
+
 ADMINS = (
 		# ('Your Name', 'your_email@domain.com'),
 )

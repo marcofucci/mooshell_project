@@ -2,6 +2,12 @@
 import re
 import os
 
+# default settings 
+# (may be overwritten by machine_settings)
+MOOSHELL_LIBRARY_GROUP = "Mootools" 
+GOOGLE_ANALYTICS_ID = None
+GOOGLE_VERIFICATION_META_TAG = None
+
 # Get the machine specific settings:
 from machine_settings import *
 from mooshell.machine_settings import *

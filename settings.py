@@ -6,6 +6,7 @@ import os
 # (may be overwritten by machine_settings)
 GOOGLE_ANALYTICS_ID = None
 GOOGLE_VERIFICATION_META_TAG = None
+CACHE_BACKEND = 'dummy://'
 
 # Get the machine specific settings:
 from machine_settings import *

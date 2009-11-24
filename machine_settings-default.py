@@ -40,7 +40,5 @@ MEDIA_DIRS = (
 				os.path.join(FRAMEWORK_PATH, 'mooshell_project/adminmedia/')
 )
 
-
-CACHE_BACKEND = 'dummy://'
 # uncomment if memcached available 
 # CACHE_BACKEND = 'memcached://127.0.0.1:11211/'

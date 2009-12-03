@@ -7,6 +7,8 @@ import os
 GOOGLE_ANALYTICS_ID = None
 GOOGLE_VERIFICATION_META_TAG = None
 CACHE_BACKEND = 'dummy://'
+CACHE_MIDDLEWARE_KEY_PREFIX = "MooTools"
+CACHE_MIDDLEWARE_SECONDS = 1800
 
 # Get the machine specific settings:
 from machine_settings import *

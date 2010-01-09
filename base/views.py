@@ -4,9 +4,14 @@ from django.views import static
 from django.conf import settings   
 from django.http import Http404  
 
-def serve_static( request, path, tool=None):
-	" serve static file. search directories in the order specified in settings.MEDIA_DIRS "
-	for media in settings.MEDIA_DIRS:
-		if os.path.exists(os.path.join(media,path)) and os.path.isfile(os.path.join(media,path)):
-			return static.serve(request, path, media)
+def serve_static(request, path, media='media', type=None):
+	if type: 
+		path = '/'.join([type, path])
+		
+	for media_group in settings.MEDIA_PATHS:
+		media_path = os.path.join(settings.FRAMEWORK_PATH, media_group, media)
+		file = os.path.join(media_path,path)
+		if os.path.exists(file) and os.path.isfile(file):
+			return static.serve( request, path, media_path)
+		
 	raise Http404 

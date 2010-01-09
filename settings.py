@@ -10,6 +10,15 @@ CACHE_BACKEND = 'dummy://'
 CACHE_MIDDLEWARE_KEY_PREFIX = "MooTools"
 CACHE_MIDDLEWARE_SECONDS = 1800
 
+MEDIA_PATHS=['mooshell']
+DEBUG = False 
+TEMPLATE_DEBUG = DEBUG
+
+TIME_ZONE = 'America/Chicago'
+LANGUAGE_CODE = 'en-us'
+MEDIA_ROOT = ''
+MEDIA_URL = ''
+
 # Get the machine specific settings:
 from machine_settings import *
 from mooshell.settings import *

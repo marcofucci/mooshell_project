@@ -19,6 +19,8 @@ LANGUAGE_CODE = 'en-us'
 MEDIA_ROOT = ''
 MEDIA_URL = ''
 
+SOUTH_AUTO_FREEZE_APP = True
+
 # Get the machine specific settings:
 from machine_settings import *
 from mooshell.settings import *
@@ -59,7 +61,7 @@ TEMPLATE_LOADERS = (
 
 TEMPLATE_CONTEXT_PROCESSORS = (
 	'django.core.context_processors.auth',
-	'django.core.context_processors.debug',
+#	'django.core.context_processors.debug',
 #	'django.core.context_processors.i18n',
     "django.core.context_processors.request",
     "mooshell.context_processors.load_settings",
@@ -78,13 +80,33 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'urls'
+try:
+	import grappelli
+	admin_apps = [
+		'grappelli',
+		'django.contrib.admin',
+	]
+except:
+	admin_apps = [
+		'django.contrib.admin',
+	]
 
-INSTALLED_APPS = (
+try:
+	import south
+	south_app = [
+		'south',
+	]
+except:
+	south_app = [
+	]
+INSTALLED_APPS = [
 	'django.contrib.auth',
 	'django.contrib.contenttypes',
 	'django.contrib.sessions',
 	'django.contrib.sites',
 	'django.contrib.admindocs',
-	'django.contrib.admin',
 	'mooshell',
-)
+]
+INSTALLED_APPS.extend(admin_apps)
+INSTALLED_APPS.extend(south_app)
+del admin_apps
